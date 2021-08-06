@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+    <include file="$(find kbot_gazebo)/launch/kbot_world.launch" />
+
+    <node name="rviz" pkg="rviz" type="rviz" required="true" 
+    args="-d $(find kbot_description)/rviz/laser.rviz"/>
+
+</launch>

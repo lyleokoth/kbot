@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="kbot_control" type="kbot_joy.py" name="kbot_joy" />
+        
+    <node pkg="joy" type="joy_node" name="joy_node" />
+</launch>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+    <include file="$(find kbot_gazebo)/launch/kbot_world.launch" />
+    <include file="$(find kbot_control)/launch/kbot_joy.launch" />
+    <include file="$(find kbot_mapping)/launch/gmapping.launch" />
+
+    <node name="rviz" pkg="rviz" type="rviz" required="true" 
+    args="-d $(find kbot_mapping)/rviz/mapping.rviz"/>    
+</launch>
